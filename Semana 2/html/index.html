@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Pastelería</title>
+    <link rel='stylesheet' type='text/css' href='/css/styles.css'>
+</head>
+
+<body style='margin: 0px;'>
+    <header>
+        <div class="menu">
+            <a class="inicio" href="/html/index.html">Inicio</a>
+            <a href="#catalogo">Catalogo</a>
+            <a href="#pedido">Pedidos</a>
+            <div class='tipo-usuario-div'>
+                <form>
+                    <label>Tipo de Usuario:</label>
+                    <select id='tipo-usuario' onchange='onUsuarioChange()'>
+                        <option value='1'>Cliente</option>
+                        <option value='2'>Pastelero</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="contenedor">
+        <div id="inicio" class="bienvenida">
+            <img id="logo" src="/imagenes/logo.png" alt="Imagen no encontrada">
+            <h2>¡Bienvenidos!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vero commodi aspernatur ea
+                quisquam illum cupiditate. Sunt possimus repudiandae, exercitationem sed tempore iusto alias cumque
+                maxime iste assumenda totam. Aliquid.</p>
+        </div>
+        <div id="catalogo" class="productos">
+            <h2>Catalogo de Productos</h2>
+            <div class="listado">
+                <div class="producto">
+                    <div class="precio">
+                        <h3>$0.00</h3>
+                    </div>
+                    <img src="/imagenes/pay-de-queso.jpg" alt="Imagen no encontrada">
+                    <div class="informacion">
+                        <h4><b>Pay de Queso</b></h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quas molestiae eaque
+                            reiciendis inventore quasi odio recusandae ipsa ratione eius soluta maxime laudantium,
+                            sequi, cum saepe distinctio corrupti facilis. Cum.</p>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="precio">
+                        <h3>$0.00</h3>
+                    </div>
+                    <img src="/imagenes/pay-de-limon.jpg" alt="Imagen no encontrada">
+                    <div class="informacion">
+                        <h4><b>Pay de Limón</b></h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quas molestiae eaque
+                            reiciendis inventore quasi odio recusandae ipsa ratione eius soluta maxime laudantium,
+                            sequi, cum saepe distinctio corrupti facilis. Cum.</p>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="precio">
+                        <h3>$0.00</h3>
+                    </div>
+                    <img src="/imagenes/brownie.jpg" alt="Imagen no encontrada">
+                    <div class="informacion">
+                        <h4><b>Brownie</b></h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quas molestiae eaque
+                            reiciendis inventore quasi odio recusandae ipsa ratione eius soluta maxime laudantium,
+                            sequi, cum saepe distinctio corrupti facilis. Cum.</p>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="precio">
+                        <h3>$0.00</h3>
+                    </div>
+                    <img src="/imagenes/gelatina.jpg" alt="Imagen no encontrada">
+                    <div class="informacion">
+                        <h4><b>Gelatina Mosaico</b></h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quas molestiae eaque
+                            reiciendis inventore quasi odio recusandae ipsa ratione eius soluta maxime laudantium,
+                            sequi, cum saepe distinctio corrupti facilis. Cum.</p>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="precio">
+                        <h3>Desde $0.00</h3>
+                    </div>
+                    <img src="/imagenes/pay-de-queso.jpg" alt="Imagen no encontrada">
+                    <div class="informacion">
+                        <h4><b>Pastel Personalizado</b></h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quas molestiae eaque
+                            reiciendis inventore quasi odio recusandae ipsa ratione eius soluta maxime laudantium,
+                            sequi, cum saepe distinctio corrupti facilis. Cum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pedido" class='pedidos'>
+            <h2>Pedido de Pastel Personalizado</h2>
+            <form>
+                <!--Pastel-->
+                <h3>Diseño de Pastel</h3>
+                <div class='numero-nivels-div'>
+                    <label for='numero-nivels'>Número de Niveles: </label>
+                    <input id='numero-nivels' type='number' min='1' max='4' value='1' onchange='onNumeronivelsChange()'>
+                </div>
+                <div id='nivels'>
+                    <div id='nivel1' class='nivel'>
+                        <h5>Nivel 1</h5>
+                        <div class='sabores'>
+                            <label>Sabores:</label>
+                            <div>
+                                <input type='checkbox' value='Chocolate'>
+                                <label><abbr title='Precio: $0.00 pesos'>Chocolate</abbr></label>
+                            </div>
+                            <div>
+                                <input type='checkbox' value='Fresa'>
+                                <label><abbr title='Precio: $0.00 pesos'>Fresa</abbr></label>
+                            </div>
+                            <div>
+                                <input type='checkbox' value='Vainilla' checked>
+                                <label><abbr title='Precio: $0.00 pesos'>Vainilla</abbr></label>
+                            </div>
+                        </div>
+                        <div class='relleno'>
+                            <label>Relleno:</label>
+                            <div>
+                                <input type='checkbox' value='Fresa'>
+                                <label><abbr title='Precio: $0.00 pesos'>Mermelada de Fresa</abbr></label>
+                            </div>
+                            <div>
+                                <input type='checkbox' value='Avellana'>
+                                <label><abbr title='Precio: $0.00 pesos'>Crema de Avellana</abbr></label>
+                            </div>
+                            <div>
+                                <input type='checkbox' value='Betun' checked>
+                                <label><abbr title='Precio: $0.00 pesos'>Betún de Mantequilla</abbr></label>
+                            </div>
+                        </div>
+                        <div class='decoraciones'>
+                            <label>Decoraciones: </label>
+                            <div>
+                                <input type='checkbox' value='Fresas'>
+                                <label><abbr title='Precio: $0.00 pesos'>Fresas</abbr></label>
+                            </div>
+                            <div>
+                                <input type='checkbox' value='Chocolate'>
+                                <label><abbr title='Precio: $0.00 pesos'>Chispas de Chocolate</abbr></label>
+                            </div>
+                            <div>
+                                <input type='checkbox' value='Chispas'>
+                                <label><abbr title='Precio: $0.00 pesos'>Chispas de Colores</abbr></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion-pastel" style="margin-top: 10px;">
+                    <label for="descripcion-general">Descripción General: </label>
+                    <br>
+                    <textarea style="width: 100%;margin-top: 10px;resize: none;"></textarea>
+                </div>
+                <h3>Información de Entrega</h3>
+                <div class="entrega">
+                    <!--Nombre-->
+                    <div class='nombre-div'>
+                        <label for='nombre'>Nombre</label>
+                        <input id='nombre' type='text'>
+                    </div>
+                    <!--Telefono-->
+                    <div class="telefono-div">
+                        <label for="telefono">Telefono:</label>
+                        <input id="telefono" type="tel">
+                    </div>
+                    <!--Correo-->
+                    <div class="correo-div">
+                        <label for="correo">Correo electronico:</label>
+                        <input id="correo" type="email">
+                    </div>
+                    <!--Entrega-->
+                    <div class='tipo-entrega-div'>
+                        <label for='tipo-entrega'>Tipo de Entrega: </label>
+                        <select id='tipo-entrega' onchange='onTipoChange()'>
+                            <option value='1'>En sucursal</option>
+                            <option value='2'>A domicilio</option>
+                        </select>
+                    </div>
+                    <div class='direccion-div' style='display: none'>
+                        <label for='direccion'>Dirección de Entrega:</label>
+                        <input id='direccion' type='text'>
+                    </div>
+                    <div class='sucursales'>
+                        <label for='sucursal'>Sucursal: </label>
+                        <select id='sucursal'>
+                            <option value='1'>Norte</option>
+                            <option value='2'>Centro</option>
+                            <option value='3'>Sur</option>
+                        </select>
+                    </div>
+                    <div class="fecha-div">
+                        <label for="fecha">Fecha de Entrega:</label>
+                        <input id="fecha" type="date">
+                    </div>
+                    <div class="horario-div">
+                        <label for="horario">Hora de Entrega:</label>
+                        <input id="horario" type="time">
+                    </div>
+                </div>
+                <div class="botones">
+                    <input id="aceptar-pedido" class="btn-aceptar" type="button" value="Aceptar" onclick="generarPago()">
+                </div>
+                
+                <div class="pago" style="display: none;">
+                    <h3>Información de Pago</h3>
+                    <table>
+                        <tr>
+                            <th>
+                                &nbsp;
+                            </th>
+                            <th>
+                                Precio
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Base
+                            </td>
+                            <td>
+                                $0.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Niveles Extra
+                            </td>
+                            <td>
+                                $0.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Sabores
+                            </td>
+                            <td>
+                                $0.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Decoraciones
+                            </td>
+                            <td>
+                                $0.00
+                            </td>
+                        </tr>
+                        <tr id="direccion-pago">
+                            <td>
+                                Entrega a domicilio
+                            </td>
+                            <td>
+                                $0.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td class="totales">
+                                $0.00
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="botones">
+                        <input class="btn-cancelar" type="button" value="Cancelar" onclick="cancelar()">
+                        <input class="btn-aceptar" type="submit" value="Realizar Pedido" onclick="hacerPedido()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src='/js/pasteleria.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body style="margin: 0px;">
+    <header>
+        <div class="menu">
+            <a class="inicio" href="/html/index.html">Inicio</a>
+            <a href="#pedido">Pedidos</a>
+            <a href="#almacen">Almacen</a>
+            <div class='tipo-usuario-div'>
+                <form>
+                    <label>Tipo de Usuario:</label>
+                    <select id='tipo-usuario' onchange='onUsuarioChange()'>
+                        <option value='1'>Cliente</option>
+                        <option value='2' selected>Pastelero</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="contenedor">
+        <div id="inicio" class="bienvenida">
+            <img id="logo" src="/imagenes/logo.png" alt="Imagen no encontrada">
+            <h2>¡Bienvenido Pastelero!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vero commodi aspernatur ea
+                quisquam illum cupiditate. Sunt possimus repudiandae, exercitationem sed tempore iusto alias cumque
+                maxime iste assumenda totam. Aliquid.</p>
+        </div>
+        <div id="pedido" class="pedidos">
+            <h3>Pedidos</h3>
+            <table class="table-pastelero">
+                <tr>
+                    <th>Número</th>
+                    <th>Descripción General</th>
+                    <th>Niveles</th>
+                    <th>Cliente</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pastel de Boda</td>
+                    <td>4</td>
+                    <td>Sofía Gaytán</td>
+                </tr>
+            </table>
+        </div>
+        <div id="almacen">
+            <h3>Almacen</h3>
+            <table class="table-pastelero">
+                <tr>
+                    <th colspan="2">
+                        Sabores
+                    </th>
+                </tr>
+                <tr>
+                    <td>Sabor</td>
+                    <td>Cantidad</td>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Fresa</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Vainilla</td>
+                    <td>100</td>
+                </tr>
+            </table>
+            <br>
+            <table class="table-pastelero">
+                <tr>
+                    <th colspan="2">
+                        Decoraciones
+                    </th>
+                </tr>
+                <tr>
+                    <td>Decoración</td>
+                    <td>Cantidad</td>
+                </tr>
+                <tr>
+                    <td>Fresas</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Chispas de Chocolate</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Chispas de Colores</td>
+                    <td>100</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="/js/pasteleria.js"></script>
+</body>
+
+</html>
